@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolução das Questões</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    .box { border: 1px solid #ccc; padding: 1em; margin-bottom: 2em; border-radius: 8px; max-width: 400px; }
+    label { display: block; margin-bottom: 0.5em; }
+    input[type="number"] { width: 100%; padding: 0.5em; margin-bottom: 1em; }
+    button { padding: 0.5em 1em; }
+    pre { background: #f8f8f8; padding: 1em; border-radius: 6px; }
+  </style>
+  <script src="questao1.js"></script>
+  <script src="questao2.js"></script>
+  <script src="questao3.js"></script>
+  <script src="questao4.js"></script>
+  <script src="questao5.js"></script>
+</head>
+<body>
+  <h1>Resolução das Questões</h1>
+
+  <div class="box">
+    <h2>Questão 1: Soma dos Números</h2>
+    <button onclick="somarNumeros()">Somar</button>
+    <pre id="somaResultado"></pre>
+  </div>
+
+  <div class="box">
+    <h2>Questão 2: Fibonacci</h2>
+    <label for="fiboInput">Digite um número:</label>
+    <input type="number" id="fiboInput" />
+    <button onclick="ehFibonacci()">Verificar</button>
+    <pre id="fiboResultado"></pre>
+  </div>
+
+  <div class="box">
+    <h2>Questão 3: Faturamento Mensal</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="calcularFaturamento()">Calcular Faturamento</button>
+    <pre id="faturamentoResultado"></pre>
+  </div>
+
+  <div class="box">
+    <h2>Questão 4: Percentual de Representação</h2>
+    <button onclick="percentualRepresentacao()">Calcular Faturamento</button>
+    <pre> Baseado no faturamento total de R$180.759,98 conforme:
+      {
+        SP: R$67.836,43,
+        RJ: R$36.678,66,
+        MG: R$29.229,88,
+        ES: R$27.165,48,
+        Outros: R$19.849,53
+      }
+    </pre>
+    <pre id="percentualRepresentacaoResultado"></pre>
+  </div>
+
+  <div class="box">
+    <h2>Questão 5: Inverter String</h2>
+    <label for="inverterInput">Digite uma string:</label>
+    <input type="text" id="inverterInput" />
+    <button onclick="inverterString()">Inverter</button>
+    <pre id="inverterResultado"></pre>
+  </div>
+</body>
+</html> 
